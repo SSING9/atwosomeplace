@@ -52,3 +52,10 @@ $('.imgSlide').slick({
 });
 
 /* 이미지 슬라이드 끝 */
+
+$('#event').click(function(e){
+   e.preventDefault();
+   $(this).hide();
+});
+
+/* 이벤트창 닫기 */
