@@ -1,9 +1,11 @@
+@charset "utf-8";
+
 * {margin: 0; padding: 0;}
 a {text-decoration: none; color: #464646;}
 li {list-style: none;}
 img {border: 0;}
 p {color: #464646;}
-button {border: 0;}
+button {border: 0; outline: 0;}
 .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
 
 /*
