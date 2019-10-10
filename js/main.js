@@ -1,19 +1,21 @@
-var navEvent = function(main, sub){
+var navEvent = function(main, sub, font){
    $(main).mouseover(function(){
       $(sub).stop().slideDown(300);
       $(main).css('background', '#1f1f20');
+      $(font).css('color','#dd0330');
    });
    $(main).mouseleave(function(){
       $(sub).stop().slideUp(300);
       $(main).css('background', '');
+      $(font).css('color','#fff');
    });
 }
 
-navEvent('.mainList1, .mainSub1', '.mainSub1');
-navEvent('.mainList2, .mainSub2', '.mainSub2');
-navEvent('.mainList3, .mainSub3', '.mainSub3');
-navEvent('.mainList4, .mainSub4', '.mainSub4');
-navEvent('.mainList5, .mainSub5', '.mainSub5');
+navEvent('.mainList1, .mainSub1', '.mainSub1', '.mainList1 a');
+navEvent('.mainList2, .mainSub2', '.mainSub2', '.mainList2 a');
+navEvent('.mainList3, .mainSub3', '.mainSub3', '.mainList3 a');
+navEvent('.mainList4, .mainSub4', '.mainSub4', '.mainList4 a');
+navEvent('.mainList5, .mainSub5', '.mainSub5', '.mainList5 a');
 
 /* 네비 슬라이드 영역 끝 */
 
